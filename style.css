@@ -1,11 +1,19 @@
 table,
+table{
+    margin: 5px;
+}
 td{
     border: 1px solid #333;
+    width: 420;
 }
 thead,
 tfoot{
     background-color: #333;
-    color: #fff;
+    color: #e0a9a9;
+
+}
+tbody{
+    width: max-content;
 }
 h1{
     text-align: center;
@@ -14,4 +22,5 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 50px;
 }
