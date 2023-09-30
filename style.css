@@ -67,7 +67,7 @@ h1{
 }
 
 .contact-us {
-    /* box-sizing: content-box; */
+    box-sizing: content-box;
     list-style: none;
     display: flex;
     padding: 15px;
@@ -110,4 +110,9 @@ h1{
     display:flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.item {
+    margin: 5px;
+    margin-right: auto;
 }
