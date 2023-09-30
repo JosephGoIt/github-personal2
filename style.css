@@ -56,7 +56,7 @@ h1{
 }
 
 .menu .link {
-    /* display: block; */
+    display: block;
     text-decoration: none;
     padding: 10px;
     background-color: #e0a9a9;
@@ -67,7 +67,7 @@ h1{
 }
 
 .contact-us {
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
     list-style: none;
     display: flex;
     padding: 15px;
@@ -80,8 +80,16 @@ h1{
     padding: 5px;
     background-color: #e0a9a9;
     border: 1px solid blue;
+    display:block;
 }
 
+.pic{
+    display: block;
+}
+
+.con {
+    display: flex;
+}
 .page-header {
     display: flex;
     justify-content: space-evenly;
@@ -114,5 +122,32 @@ h1{
 
 .item {
     margin: 5px;
-    margin-right: auto;
+    margin-right: 5px;
+    margin-left: 5px;
 }
+
+.button {
+    display:block;
+}
+
+.box::before {
+    content: 'This is the text in ::before';
+    font-size: 40px;
+    color: orange;
+  }
+  
+  .box::after {
+    content: 'This is the text in ::after';
+    font-size: 30px;
+    color: teal;
+  }
+
+  /* Apply styles to the .box::before pseudo-element when hovering over the .box element */
+.box:hover::before {
+    color: green;
+  }
+  
+  /* Apply styles to the .box::after pseudo-element when hovering over the .box element */
+  .box:hover::after {
+    color: tomato;
+  }
