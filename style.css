@@ -168,4 +168,20 @@ h1{
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
+    /* position: absolute;
+    left:0; */
   }
+
+.icon-check {
+    width: 16px;
+    height: 16px;
+    fill:none;
+    border: 1px solid gray;
+    transition: 250ms;
+    transition-property: fill border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox1:focus + .icon-check {
+    fill:#333;
+}
